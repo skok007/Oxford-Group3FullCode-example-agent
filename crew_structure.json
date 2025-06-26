@@ -1,0 +1,67 @@
+{
+  "agents": [
+    {
+      "id": "market_watcher_agent",
+      "role": "Market Researcher",
+      "goal": "Gathers relevant financial news and flags volatility triggers",
+      "backstory": "You are MarketWatcherAgent, an experienced financial market analyst and AI-powered market researcher...",
+      "tools": ["SerperDevTool", "ScrapeWebsiteTool"]
+    },
+    {
+      "id": "investment_strategy_agent",
+      "role": "Investment Strategist",
+      "goal": "Forms investment strategy based on research and volatility indicators",
+      "backstory": "You are InvestmentStrategyAgent, a seasoned investment strategist...",
+      "tools": []
+    },
+    {
+      "id": "investment_ideation_agent",
+      "role": "Investment Ideator",
+      "goal": "Generate investment ideas and shape portfolios based on investment strategies",
+      "backstory": "You are InvestmentIdeationAgent, an innovative and disciplined Investment Ideator...",
+      "tools": []
+    },
+    {
+      "id": "writer_agent",
+      "role": "Investment Writer",
+      "goal": "Generate a detailed investment opportunities blog or article for investment magazine based on the ideas provided",
+      "backstory": "You are WriterAgent, a skilled Investment Writer with expertise in transforming financial data...",
+      "tools": []
+    },
+    {
+      "id": "review_decide_agent",
+      "role": "Investment Decision Maker",
+      "goal": "Choose the best investment portfolios and provide justification",
+      "backstory": "You are ReviewDecideAgent, a professional Investment Decision Maker responsible for evaluating portfolios...",
+      "tools": []
+    }
+  ],
+  "tasks": [
+    {
+      "agent_id": "market_watcher_agent",
+      "description": "Detect and analyze recent market volatility triggers and macro economics developments",
+      "expected_output": "A structured report of early volatility indicators and their potential impacts"
+    },
+    {
+      "agent_id": "investment_strategy_agent",
+      "description": "Formulate investment strategies based on market research and volatility analysis",
+      "expected_output": "A set of data-driven investment strategy recommendations with pros and cons"
+    },
+    {
+      "agent_id": "investment_ideation_agent",
+      "description": "Translate high-level strategies into specific asset ideas and portfolio compositions",
+      "expected_output": "A list of proposed assets with allocation weights and rationales"
+    },
+    {
+      "agent_id": "writer_agent",
+      "description": "Generate a detailed investment opportunities blog post based on provided portfolio ideas",
+      "expected_output": "A formatted article ready for publication"
+    },
+    {
+      "agent_id": "review_decide_agent",
+      "description": "Review all outputs and select the best investment portfolio(s) for implementation",
+      "expected_output": "A decision report with chosen portfolio and justification"
+    }
+  ],
+  "process": "sequential"
+}
